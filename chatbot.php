@@ -1,7 +1,5 @@
 <?php
 
-
-
 switch (true) {
 
 	// BEGIN responses PRIVATE
@@ -89,7 +87,7 @@ switch (true) {
 		$this->insertChatBotMessage($this->getChannel(),"If you've got an account on YouTube, you can [url=http://www.youtube.com/group/roleplaygateway]join the RolePlayGateway group[/url] and share your favorite videos with everyone, or even post videos you've made.");
 	break;
 	case stristr($text,"!googleplus"):
-		$this->insertChatBotMessage($this->getChannel(),"An [url=http://www.roleplaygateway.com/google-invitations-and-profiles-t63266.html]official list of RPG users on Google+[/url] is available.");
+		$this->insertChatBotMessage($this->getChannel(),"An [url=http://www.roleplaygateway.com/google-invitations-and-profiles-t63266.html]official list of RPG users on Google+[/url] is available.  Also, [url=https://plus.google.com/110144800481177432411]the Official RolePlayGateway Page on Google+[/url].");
 	break;
 	case stristr($text,"!github"):
 		$this->insertChatBotMessage($this->getChannel(),"Explore our public source code on [url=http://github.com/RolePlayGateway]the RolePlayGateway GitHub[/url], and feel free to submit a pull request with changes, and you never know--[b]you[/b] might be the next Coder!");
