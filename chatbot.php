@@ -7,10 +7,11 @@ switch (true) {
 	case stristr($text,"help me"):
 		$this->insertChatBotMessage($this->getPrivateMessageID(),"If you're looking for help, start by contacting our [url=http://www.roleplaygateway.com/memberlist.php?mode=group&g=2625]Global Moderators[/url] (GMs for short).");
 	break;
+	/* Removed as per request here: http://is.gd/U0K6hX
 	case (strlen($text) >= 512):
 		$this->insertChatBotMessage($this->getPrivateMessageID(),"Please don't forget that the chat is for shorter and faster-paced roleplay, while the forum is for the longer and more descriptive posts.  If you keep your chat messages between one and two sentences, that lets other people interact with you more frequently, making for a better roleplay!  Then everyone doesn't have to wait so long for posts.");
 	break;
-	
+	*/
 	// BEGIN responses PUBLIC
 	/*case stristr($text,"!quote"):
 		$sql = 'SELECT author,text FROM rpg_quotes ORDER BY rand() LIMIT 1';
