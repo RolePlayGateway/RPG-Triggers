@@ -63,13 +63,19 @@ switch (true) {
 	case stristr($text,"!occ"):
 		$this->insertChatBotMessage($this->getChannel(),"Make sure you use the acronym 'OOC' correctly! [b]O[/b]ut [b]O[/b]f [b]C[/b]haracter (OOC).  The other word, 'OCC', actually means [b]O[/b]riginal [b]C[/b]anon [b]C[/b]haracter, something completely different.");
 	break;
+	/* Commented out 10-12-2011 to allow new text until HOR2.0 is released - URL updated
 	case stristr($text,"!hor"):
-		$this->insertChatBotMessage($this->getChannel(),"[url=http://www.thegrandtournament.com]The Hall of Records (HoR)[/url] is the permenent repository for the results of text-based fighting.  Every two years, the top fighters from this recordkeeper are invited to \"The Grand Tournament\" to determine who is the internet's best fighter.");
+		$this->insertChatBotMessage($this->getChannel(),"[url=http://www.the-hall-of-records.com]The Hall of Records (HoR)[/url] is the permenent repository for the results of text-based fighting.  Every two years, the top fighters from this recordkeeper are invited to \"The Grand Tournament\" to determine who is the internet's best fighter.");
 	break;
+	*/
+	// Temporary !hor text to cover until HOR2.0 is released:
+	case stristr($text,"!hor"):
+		$this->insertChatBotMessage($this->getChannel(),"[url=http://www.the-hall-of-records.com]The Hall of Records (HoR)[/url] is currently undergoing an update to version 2.0. New features include an improved ranking system and a better design. Please check back for updates on when HoR2.0 will be released.");
 	case stristr($text,"!eve"):
 		$this->insertChatBotMessage($this->getChannel(),"EVE Online is an MMORPG that doesn't have levels or experience points (no grinding!) - it focuses on [url=http://www.youtube.com/watch?v=08hmqyejCYU]'emergent' gameplay (YouTube Video)[/url] and actual (!) roleplay. You can play with Remaeus on a [url=https://secure.eve-online.com/ft/?aid=103657]free 14 day trial[/url], or [url=http://www.roleplaygateway.com/ucp.php?i=pm&mode=compose&u=4]send him a PM[/url] to see if he has any 21 day trials available.  [b]If you already play, join the in-game channel \"RolePlayGateway\". Instructions, guide, and discussion is available in the [url=http://www.roleplaygateway.com/the-official-eve-online-thread-t43588.html]Official EVE Online Thread[/url].[/b]");
 	break;
-	case stristr($text,"!last.fm"):
+	// Updated 10-12-2011 to allow !lastfm - alternative suggested after Remaeus typoed the trigger, makes sense to allow both options
+	case ((stristr($text,"!last.fm")) || (stristr($text,"!lastfm"))):
 		$this->insertChatBotMessage($this->getChannel(),"RolePlayGateway can be found on [url=http://last.fm]Last.fm[/url], you should join the [url=http://www.last.fm/group/RolePlay+Gateway]RolePlayGateway group on Last.fm[/url]!  (You can also [url=http://last.fm/user/Remaeus/]spy on the site owner's listening habits[/url] and make fun of his music selection)");
 	break;
 	case stristr($text,"!facebook"):
@@ -135,7 +141,8 @@ switch (true) {
 	case stristr($text,"Connection status: 0"):
 		$this->insertChatBotMessage($this->getChannel(),"Error 0 means that the server has gone away. Just type any command (like [code]/list[/code]) and you will automatically reconnect.");
 	break;
-	case stristr($text,"pen the pod bay doors"):
+	// Updated 10-12-2011 for correctness: 'pen' changed to 'open'
+	case stristr($text,"open the pod bay doors"):
 		$this->insertCustomMessage($this->getConfig('chatBotID'), 'HAL', AJAX_CHAT_CHATBOT, $this->getChannel(), "I'm sorry, I can't do that right now." );		
 	break;
 	
