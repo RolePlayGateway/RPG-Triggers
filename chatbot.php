@@ -70,6 +70,7 @@ switch (true) {
 		$this->insertChatBotMessage($this->getChannel(),"EVE Online is an MMORPG that doesn't have levels or experience points (no grinding!) - it focuses on [url=http://www.youtube.com/watch?v=08hmqyejCYU]'emergent' gameplay (YouTube Video)[/url] and actual (!) roleplay. You can play with Remaeus on a [url=https://secure.eve-online.com/ft/?aid=103657]free 14 day trial[/url], or [url=http://www.roleplaygateway.com/ucp.php?i=pm&mode=compose&u=4]send him a PM[/url] to see if he has any 21 day trials available.  [b]If you already play, join the in-game channel \"RolePlayGateway\". Instructions, guide, and discussion is available in the [url=http://www.roleplaygateway.com/the-official-eve-online-thread-t43588.html]Official EVE Online Thread[/url].[/b]");
 	break;
 	case stristr($text,"!last.fm"):
+	case stristr($text,"!lastfm"):
 		$this->insertChatBotMessage($this->getChannel(),"RolePlayGateway can be found on [url=http://last.fm]Last.fm[/url], you should join the [url=http://www.last.fm/group/RolePlay+Gateway]RolePlayGateway group on Last.fm[/url]!  (You can also [url=http://last.fm/user/Remaeus/]spy on the site owner's listening habits[/url] and make fun of his music selection)");
 	break;
 	case stristr($text,"!facebook"):
@@ -88,6 +89,7 @@ switch (true) {
 		$this->insertChatBotMessage($this->getChannel(),"If you've got an account on YouTube, you can [url=http://www.youtube.com/group/roleplaygateway]join the RolePlayGateway group[/url] and share your favorite videos with everyone, or even post videos you've made.");
 	break;
 	case stristr($text,"!googleplus"):
+	case stristr($text,"!google+"):
 		$this->insertChatBotMessage($this->getChannel(),"An [url=http://www.roleplaygateway.com/google-invitations-and-profiles-t63266.html]official list of RPG users on Google+[/url] is available.  Also, [url=https://plus.google.com/110144800481177432411]the Official RolePlayGateway Page on Google+[/url].");
 	break;
 	case stristr($text,"!github"):
