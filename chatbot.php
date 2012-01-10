@@ -42,8 +42,8 @@ switch (true) {
 /* 	case stristr($text,"!troll"):
 		$this->insertChatBotMessage($this->getChannel(),"[url=http://www.youtube.com/watch?v=6bMLrA_0O5I][img]http://i195.photobucket.com/albums/z91/Pheloz/boxxy-trolling.jpg[/img][/url]");
 	break;	 */	
-	case stristr($text,"!newuser"):
-		$this->insertChatBotMessage($this->getChannel(),"As a new user, you should check out the following links: \n- [url=http://www.roleplaygateway.com/the-official-roleplaygateway-rules-t1369.html]RPG Rules[/url] (we only have five!)\n- [url=http://www.roleplaygateway.com/role-play-academy-f125.html]The RolePlayAcademy[/url]: great for roleplaying help!\n- [url=http://www.roleplaygateway.com/help-f11.html]The Help Forum[/url] - useful for getting answers to specific questions.\n- [url=http://www.roleplaygateway.com/simple-beginner-guide-roleplaygateway-chat-system-t32024.html]The Beginner's guide to RPG Chat[/url]: explains the special roleplaying features in this chat.");
+	case stristr($text,"!newuser"): // 10/01/2012 - Updated link to chat guide to most up-to-date
+		$this->insertChatBotMessage($this->getChannel(),"As a new user, you should check out the following links: \n- [url=http://www.roleplaygateway.com/the-official-roleplaygateway-rules-t1369.html]RPG Rules[/url] (we only have five!)\n- [url=http://www.roleplaygateway.com/role-play-academy-f125.html]The RolePlayAcademy[/url]: great for roleplaying help!\n- [url=http://www.roleplaygateway.com/help-f11.html]The Help Forum[/url] - useful for getting answers to specific questions.\n- [url=http://www.roleplaygateway.com/the-hitchhiker-guide-rpg-chat-t47585.html]The Beginner's guide to RPG Chat[/url]: explains the special roleplaying features in this chat.");
 	break;		
 /* 	case stristr($text,"!thegame"):
 		$this->insertChatBotMessage($this->getChannel(),"[url=http://epicponyz.files.wordpress.com/2009/06/sorry-you-just-lost-the-game.jpg]You lost it.[/url]");
